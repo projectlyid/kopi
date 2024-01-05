@@ -134,12 +134,67 @@
                     </div> 
                 </div>
                 <!-- END: Top Bar -->
-                <div class="intro-y flex flex-col sm:flex-row items-center mt-8">
-                    <h2 class="text-lg font-medium mr-auto">
-                        Data Penjualan
-                    </h2>
-                    
+
+                <!-- BEGIN: General Report -->
+                <div class="col-span-12 mt-8">
+                    <div class="intro-y flex items-center h-10">
+                        <h2 class="text-lg font-medium truncate mr-5">
+                            General Report
+                        </h2>
+                        <a href="" class="ml-auto flex text-theme-1"> <i data-feather="refresh-ccw" class="w-4 h-4 mr-3"></i> Reload Data </a>
+                    </div>
+                    <div class="grid grid-cols-12 gap-6 mt-5">
+                        <div class="col-span-12 sm:col-span-6 xl:col-span-3 intro-y">
+                            <div class="report-box zoom-in">
+                                <div class="box p-5">
+                                    <div class="flex">
+                                        <i data-feather="shopping-cart" class="report-box__icon text-theme-10"></i> 
+                                        
+                                    </div>
+                                    <div class="text-3xl font-bold leading-8 mt-6">Rp 53.100.000</div>
+                                    <div class="text-base text-gray-600 mt-1">Penjualan Hari Ini</div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-span-12 sm:col-span-6 xl:col-span-3 intro-y">
+                            <div class="report-box zoom-in">
+                                <div class="box p-5">
+                                    <div class="flex">
+                                        <i data-feather="credit-card" class="report-box__icon text-theme-11"></i> 
+                                        
+                                    </div>
+                                    <div class="text-3xl font-bold leading-8 mt-6">3.521</div>
+                                    <div class="text-base text-gray-600 mt-1">Transaksi Hari Ini</div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-span-12 sm:col-span-6 xl:col-span-3 intro-y">
+                            <div class="report-box zoom-in">
+                                <div class="box p-5">
+                                    <div class="flex">
+                                        <i data-feather="monitor" class="report-box__icon text-theme-12"></i> 
+                                        
+                                    </div>
+                                    <div class="text-3xl font-bold leading-8 mt-6">5</div>
+                                    <div class="text-base text-gray-600 mt-1">Void Transaksi</div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-span-12 sm:col-span-6 xl:col-span-3 intro-y">
+                            <div class="report-box zoom-in">
+                                <div class="box p-5">
+                                    <div class="flex">
+                                        <i data-feather="user" class="report-box__icon text-theme-9"></i> 
+                                        
+                                    </div>
+                                    <div class="text-3xl font-bold leading-8 mt-6">Rp 152.000</div>
+                                    <div class="text-base text-gray-600 mt-1">Void Transaksi</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
                 </div>
+                <!-- END: General Report -->
                 <!-- BEGIN: Datatable -->
                 <div class="intro-y datatable-wrapper box p-5 mt-5">
                     <table class="table table-report table-report--bordered display datatable w-full">
@@ -191,9 +246,28 @@
                                     </div>
                                 </td>
                             </tr>
-                            
+                            <tr>
+                                <td class="border-b">
+                                    <div class="font-medium whitespace-no-wrap"># 10002</div>
+                                    <div class="text-gray-600 text-xs whitespace-no-wrap">13-01-2024</div>
+                                </td>
+                                <td class="border-b">
+                                    <div class="font-medium whitespace-no-wrap">Nama Customer</div>
+                                    <div class="text-gray-600 text-xs whitespace-no-wrap">Driver</div>
+                                </td>
+                                <td class="text-center border-b">Rp 152.000</td>
+                                <td class="w-40 border-b">
+                                    <div class="flex items-center sm:justify-center text-theme-11"> <i data-feather="check-square" class="w-4 h-4 mr-2"></i> Void </div>
+                                </td>
+                                <td class="border-b w-5">
+                                    <div class="flex sm:justify-center items-center">
+                                        <a class="flex items-center mr-3" href=""> <i data-feather="edit" class="w-4 h-4 mr-1"></i> Void </a>
+                                    </div>
+                                </td>
+                            </tr>
                         </tbody>
                     </table>
+                    
                 </div>
                 <!-- END: Datatable -->
             </div>
