@@ -540,42 +540,26 @@
             <div class="content">
                 <!-- BEGIN: Top Bar -->
                 <div class="top-bar">
-                    <h2 class="text-2xl font-medium leading-none mt-3">Nama Operator</h2>
+                    <div id="" class="relative flex items-center py-1"> 
+                        <div class="w-12 h-12 image-fit"> <img alt="Midone Tailwind HTML Admin Template" class="rounded-full" src="dist/images/profile-13.jpg"> </div> 
+                            <div class="ml-4 mr-auto"> 
+                                <div class="font-medium leading-relaxed">Nama Operator</div> 
+                                <div class="text-gray-600">Jabatan</div> 
+                            </div> 
+                    </div> 
 
                     <!-- BEGIN: Notifications -->
-                    <div class="intro-x dropdown relative ml-4 sm:mr-6">
-                        <div class="dropdown-toggle notification notification--bullet cursor-pointer"> <i data-feather="bell" class="notification__icon"></i> </div>
-                        <div class="notification-content dropdown-box mt-8 absolute top-0 left-0 sm:left-auto sm:right-0 z-20 -ml-10 sm:ml-0">
-                            <div class="notification-content__box dropdown-box__content box">
-                                <div class="notification-content__title">Notifications</div>
-                                <div class="cursor-pointer relative flex items-center ">
-                                    <div class="w-12 h-12 flex-none image-fit mr-1">
-                                        <img alt="Midone Tailwind HTML Admin Template" class="rounded-full" src="dist/images/profile-13.jpg">
-                                        <div class="w-3 h-3 bg-theme-9 absolute right-0 bottom-0 rounded-full border-2 border-white"></div>
-                                    </div>
-                                    <div class="ml-2 overflow-hidden">
-                                        <div class="flex items-center">
-                                            <a href="javascript:;" class="font-medium truncate mr-5">Kopi Hitam</a> 
-                                            <div class="text-xs text-gray-500 ml-auto whitespace-no-wrap">01:10 PM</div>
-                                        </div>
-                                        <div class="w-full truncate text-gray-600">Stok Kopi Hitam Menipis</div>
-                                    </div>
-                                </div>
-                                <div class="cursor-pointer relative flex items-center mt-5">
-                                    <div class="w-12 h-12 flex-none image-fit mr-1">
-                                        <img alt="Midone Tailwind HTML Admin Template" class="rounded-full" src="dist/images/profile-15.jpg">
-                                        <div class="w-3 h-3 bg-theme-9 absolute right-0 bottom-0 rounded-full border-2 border-white"></div>
-                                    </div>
-                                    <div class="ml-2 overflow-hidden">
-                                        <div class="flex items-center">
-                                            <a href="javascript:;" class="font-medium truncate mr-5">Teh Manis</a> 
-                                            <div class="text-xs text-gray-500 ml-auto whitespace-no-wrap">01:10 PM</div>
-                                        </div>
-                                        <div class="w-full truncate text-gray-600">Stok Teh Manis Menipis</div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
+                    <div class="text-center ml-auto"> 
+                        <a href="javascript:;" data-theme="light" data-tooltip-content="#custom-content-tooltip" data-event="on-click" class="tooltip button inline-block bg-theme-1 text-white" title="This is awesome tooltip example!">Stok Menipis</a> 
+                    </div> 
+                    <div class="tooltip-content"> 
+                        <div id="custom-content-tooltip" class="relative flex items-center py-1"> 
+                            <div class="w-12 h-12 image-fit"> <img alt="Midone Tailwind HTML Admin Template" class="rounded-full" src="dist/images/profile-13.jpg"> </div> 
+                                <div class="ml-4 mr-auto"> 
+                                    <div class="font-medium leading-relaxed">Teh Manis</div> 
+                                    <div class="text-gray-600">Stok Menipis</div> 
+                                </div> 
+                        </div> 
                     </div>
                     <!-- END: Notifications -->
                 </div>
@@ -592,7 +576,7 @@
                             </button>
                             <div class="pos-dropdown__dropdown-box dropdown-box mt-10 absolute top-0 right-0 z-20">
                                 <div class="dropdown-box__content box p-2">
-                                    <a href="" class="flex items-center block p-2 transition duration-300 ease-in-out bg-white hover:bg-gray-200 rounded-md"> <i bayardata-feather="activity" class="w-4 h-4 mr-2"></i> <span class="truncate">Nota Belum Dibayar</span> </a>
+                                    <a href="" class="flex items-center block p-2 transition duration-300 ease-in-out bg-white hover:bg-gray-200 rounded-md"> <i data-feather="activity" class="w-4 h-4 mr-2"></i> <span class="truncate">Nota Belum Dibayar</span> </a>
                                     <a href="" class="flex items-center block p-2 transition duration-300 ease-in-out bg-white hover:bg-gray-200 rounded-md"> <i data-feather="activity" class="w-4 h-4 mr-2"></i> <span class="truncate">Nama Customer</span> </a>
                                     <a href="" class="flex items-center block p-2 transition duration-300 ease-in-out bg-white hover:bg-gray-200 rounded-md"> <i data-feather="activity" class="w-4 h-4 mr-2"></i> <span class="truncate">Tampilkan Nota hari ini saja</span> </a>
                                 </div>
