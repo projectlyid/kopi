@@ -198,21 +198,6 @@
                         Point of Sale
                     </h2>
                     
-                    <div class="w-full sm:w-auto flex mt-4 sm:mt-0">
-                        <a href="javascript:;" data-toggle="modal" data-target="#new-order-modal" class="button text-white bg-theme-1 shadow-md mr-2">New Order</a> 
-                        <div class="pos-dropdown dropdown relative ml-auto sm:ml-0">
-                            <button class="dropdown-toggle button px-2 box text-gray-700">
-                                <span class="w-5 h-5 flex items-center justify-center"> <i class="w-4 h-4" data-feather="chevron-down"></i> </span>
-                            </button>
-                            <div class="pos-dropdown__dropdown-box dropdown-box mt-10 absolute top-0 right-0 z-20">
-                                <div class="dropdown-box__content box p-2">
-                                    <a href="" class="flex items-center p-2 transition duration-300 ease-in-out bg-white hover:bg-gray-200 rounded-md"> <i data-feather="activity" class="w-4 h-4 mr-2"></i> <span class="truncate">Nota Belum Dibayar</span> </a>
-                                    <a href="" class="flex items-center p-2 transition duration-300 ease-in-out bg-white hover:bg-gray-200 rounded-md"> <i data-feather="activity" class="w-4 h-4 mr-2"></i> <span class="truncate">Nama Customer</span> </a>
-                                    <a href="" class="flex items-center p-2 transition duration-300 ease-in-out bg-white hover:bg-gray-200 rounded-md"> <i data-feather="activity" class="w-4 h-4 mr-2"></i> <span class="truncate">Tampilkan Nota hari ini saja</span> </a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
                 </div>
                 
                 <div class="pos intro-y grid grid-cols-12 gap-5 mt-5">
@@ -341,7 +326,9 @@
                     <div class="col-span-12 lg:col-span-4">
                         <div class="intro-y pr-1">
                             <div class="box p-2">
-                                <div class="pos__tabs nav-tabs justify-center flex"> <a data-toggle="tab" data-target="#ticket" href="javascript:;" class="flex-1 py-2 rounded-md text-center active">Pembelian</a> <a data-toggle="tab" data-target="#details" href="javascript:;" class="flex-1 py-2 rounded-md text-center">Details</a> </div>
+                                <a href="/pos.html">
+                                    <button class="button w-full text-white bg-theme-1 shadow-md">NEW ORDER</button>
+                                </a>
                             </div>
                         </div>
                         <div class="tab-content">
@@ -420,106 +407,12 @@
                                 </div>
                                 
                             </div>
-                            <div class="tab-content__pane" id="details">
-                                <div class="box p-5 mt-5">
-                                    <div class="flex items-center border-b pb-5">
-                                        <div class="">
-                                            <div class="text-gray-600">Time</div>
-                                            <div>02/06/20 02:10 PM</div>
-                                        </div>
-                                        <i data-feather="clock" class="w-4 h-4 text-gray-600 ml-auto"></i> 
-                                    </div>
-                                    <div class="flex items-center border-b py-5">
-                                        <div class="">
-                                            <div class="text-gray-600">Customer</div>
-                                            <div>Keanu Reeves</div>
-                                        </div>
-                                        <i data-feather="user" class="w-4 h-4 text-gray-600 ml-auto"></i> 
-                                    </div>
-                                    <div class="flex items-center border-b py-5">
-                                        <div class="">
-                                            <div class="text-gray-600">Rombongan / Driver</div>
-                                            <div>Nama Rombongan / Nama Driver</div>
-                                        </div>
-                                        <i data-feather="users" class="w-4 h-4 text-gray-600 ml-auto"></i> 
-                                    </div>
-                                    <div class="flex items-center pt-5">
-                                        <div class="">
-                                            <div class="text-gray-600">Table</div>
-                                            <div>21</div>
-                                        </div>
-                                        <i data-feather="mic" class="w-4 h-4 text-gray-600 ml-auto"></i> 
-                                    </div>
-                                </div>
-                            </div>
+                            
                         </div>
                     </div>
                     <!-- END: Ticket -->
                 </div>
-                <!-- BEGIN: New Order Modal -->
-                <div class="modal" id="new-order-modal">
-                    <div class="modal__content">
-                        <div class="flex items-center px-5 py-5 sm:py-3 border-b border-gray-200">
-                            <h2 class="font-medium text-base mr-auto">
-                                New Order
-                            </h2>
-                        </div>
-                        <div class="p-5 grid grid-cols-12 gap-4 row-gap-3">
-                            <div class="col-span-12">
-                                <label>Name</label>
-                                <input type="text" class="input w-full border mt-2 flex-1" placeholder="Customer name">
-                            </div>
-                            <div class="col-span-12">
-                                <label>Table</label>
-                                <input type="text" class="input w-full border mt-2 flex-1" placeholder="Customer table">
-                            </div>
-                            <div class="col-span-12">
-                                <label>Nama Rombongan / Driver</label>
-                                <select class="select2 w-full border mt-2 flex-1">
-                                    <option value="1">Tampilkan dari yg register hari ini</option>
-                                    <option value="2">Garuda Mas</option>
-                                    <option value="3">SMA Al Azhar</option>
-                                    <option value="4">PT Maju Bersama</option>
-                                    <option value="5">Dinas Pariwisata</option>
-                                </select>
-                            </div>
-                        </div>
-                        <div class="px-5 py-3 text-right border-t border-gray-200">
-                            <button type="button" data-dismiss="modal" class="button w-32 border text-gray-700 mr-1">Cancel</button>
-                            <button type="button" class="button w-32 bg-theme-1 text-white">Create</button>
-                        </div>
-                    </div>
-                </div>
-                <!-- END: New Order Modal -->
-                <!-- BEGIN: Add Item Modal -->
-                <div class="modal" id="add-item-modal">
-                    <div class="modal__content">
-                        <div class="flex items-center px-5 py-5 sm:py-3 border-b border-gray-200">
-                            <h2 class="font-medium text-base mr-auto">
-                                Nama Item
-                            </h2>
-                        </div>
-                        <div class="p-5 grid grid-cols-12 gap-4 row-gap-3">
-                            <div class="col-span-12">
-                                <label>Quantity</label>
-                                <div class="flex mt-2 flex-1">
-                                    <button type="button" class="button w-12 border bg-gray-200 text-gray-600 mr-1">-</button>
-                                    <input type="text" class="input w-full border text-center" placeholder="Item quantity" value="2">
-                                    <button type="button" class="button w-12 border bg-gray-200 text-gray-600 ml-1">+</button>
-                                </div>
-                            </div>
-                            <div class="col-span-12">
-                                <label>Notes</label>
-                                <textarea class="input w-full border mt-2 flex-1" placeholder="Item notes"></textarea>
-                            </div>
-                        </div>
-                        <div class="px-5 py-3 text-right border-t border-gray-200">
-                            <button type="button" data-dismiss="modal" class="button w-24 border text-gray-700 mr-1">Cancel</button>
-                            <button type="button" class="button w-24 bg-theme-1 text-white">Add Item</button>
-                        </div>
-                    </div>
-                </div>
-                <!-- END: Add Item Modal -->
+                
             </div>
             <!-- END: Content -->
         </div>
